@@ -7,7 +7,15 @@ public class Main {
         //a message that the person is not yet of legal age, you need to wait a little.
         //When each condition is met, the program should print to the console a message in the format: "If the person is ...,
         // then (output depending on the result) he is an adult / he is not yet of legal age, you need to wait a little."
-
+        System.out.println("Task 1");
+        int age = 17;
+        if (age >= 18){
+            System.out.println("If the person is "+ age + ", then he is an adult.");
+        } else {
+            System.out.println("If the person is "+ age + ", then he is not yet of legal age, you need to wait a little");
+        }
+        System.out.println("------------------------------------------------------------------------------------");
+        System.out.println();
 
         //Task 2
         //A person dresses depending on the air temperature. Write a program that displays the message:
@@ -15,6 +23,15 @@ public class Main {
         //"It's warm today, you can go without a hat" - if the air temperature is above 5 degrees.
         //When each condition is met, display on the console: "It's ... degrees outside, (output depending on the result)
         // you need to put on a hat/you can go without a hat".
+        System.out.println("Task 2");
+        int airTemperature = -5;
+        if (airTemperature <= 5){
+            System.out.println("It's " + airTemperature + " degrees outside, you need to put on a hat.");
+        } else {
+            System.out.println("It's " + airTemperature + " degrees outside, you can go without a hat.");
+        }
+        System.out.println("------------------------------------------------------------------------------------");
+        System.out.println();
 
         //Task3
         //A driver may be issued a speeding ticket. Write a program that informs the driver that:
@@ -22,6 +39,15 @@ public class Main {
         //the speed is not exceeded if it is less than 60 km/h.
         //When each condition is met, the program should output the following message: "If the speed is ...,
         // then (output depending on the result) you will have to pay a fine / you can drive safely."
+        System.out.println("Task 3");
+        int speed = 61;
+        if (speed <= 60) {
+            System.out.println("If the speed is" + speed + " then, you can drive safely.");
+        } else {
+            System.out.println("If the speed is" + speed + " then, you'll have to pay a fine.");
+        }
+        System.out.println("------------------------------------------------------------------------------------");
+        System.out.println();
 
         //Task 4
         //Write a program that will help determine which institution a person should be sent to depending on their age:
@@ -31,6 +57,10 @@ public class Main {
         //And if a person is greater than 24, then it's time for them to go to work.
         //When each condition is met, the program should output a message to the console in the following format:
         // "If a person's age is ..., then they need to go to ... (add the necessary values depending on age)."
+        System.out.println("Task 4");
+
+        System.out.println("------------------------------------------------------------------------------------");
+        System.out.println();
 
         //Task 5
         //As a rule, there are age restrictions on rides for children:
