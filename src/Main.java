@@ -40,7 +40,7 @@ public class Main {
         //When each condition is met, the program should output the following message: "If the speed is ...,
         // then (output depending on the result) you will have to pay a fine / you can drive safely."
         System.out.println("Task 3");
-        int speed = 61;
+        int speed = 60;
         if (speed <= 60) {
             System.out.println("If the speed is" + speed + " then, you can drive safely.");
         } else {
@@ -58,23 +58,62 @@ public class Main {
         //When each condition is met, the program should output a message to the console in the following format:
         // "If a person's age is ..., then they need to go to ... (add the necessary values depending on age)."
         System.out.println("Task 4");
-
+        int agePerson = 17;
+        if (2 <= agePerson && agePerson <= 6) {
+            System.out.println("If a person's age is " + agePerson + " then they need to go to kindergarten.");
+        }
+        if (7 <= agePerson && agePerson <= 17) {
+            System.out.println("If a person's age is " + agePerson + " then they need to go to school.");
+        }
+        if (18 <= agePerson && agePerson <= 24) {
+            System.out.println("If a person's age is " + agePerson + " then they need to go to university.");
+        }
+        if (24 < agePerson){
+            System.out.println("If a person's age is " + agePerson + " then they need to go to work.");
+        }
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println();
 
         //Task 5
         //As a rule, there are age restrictions on rides for children:
-        //If a child is under 5 years old, he cannot ride the ride.
+        //If a child is under 5 years old, he can't ride the ride.
         //If a child is over 5 years old but under 14 years old, he can ride only if accompanied by an adult. If there
-        // is no adult, he cannot ride.
+        // is no adult, he can't ride.
         //If a child is over 14 years old, he can ride without an adult.
         //Write a program that prints a message to the console in the following format: "If the child is ...,
         // then he ... (depending on the age, add what is necessary: cannot ride the ride, can with / without an adult)".
+        System.out.println("Task 5");
+        int ageChild = 6;
+        if (ageChild < 5) {
+            System.out.println("If the child is " + ageChild + " then he can't ride the ride.");
+        }
+        if (ageChild >= 5 && ageChild < 14) {
+            System.out.println("If the child is " + ageChild + " then he can ride only if accompanied by an adult. If" +
+                    " there is no adult, he can't ride.");
+        }
+        if (ageChild >= 14) {
+            System.out.println("If the child is " + ageChild + " then he can ride without an adult.");
+        }
+        System.out.println("------------------------------------------------------------------------------------");
+        System.out.println();
 
         //Task 6
-        //The capacity of one train car is 102 people. The car is designed for 60 seats, all the rest are standing.
+        //The capacity of one carriage is 102 people. The carriage is designed for 60 seats, all the rest are standing.
         //Using the conditional operator and the else construct, write a program that prints to the console a message
-        // about whether the car has a seat, a seat, a standing place, or whether the car is already completely full.
+        // about availability of seats in the carriage, a sitting or standing place, or whether the carriage is already completely full.
+        System.out.println("Task 6");
+        int passengers = 47;
+        int capacityOfTheCarriage = 120;
+        int seats = 60;
+        if (passengers < seats) {
+            System.out.println("There are available seats.");
+        } else if (passengers > seats && passengers < capacityOfTheCarriage){
+            System.out.println("There is available standing room.");
+        } else {
+            System.out.println("There are no available seats.");
+        }
+        System.out.println("------------------------------------------------------------------------------------");
+        System.out.println();
 
         //Task 7
         //Given three numbers:
@@ -83,6 +122,19 @@ public class Main {
         //int three
         //Using a conditional statement and the else construct, write a program that calculates which of the three
         // numbers is greater and prints the result to the console.
+        System.out.println("Task 7");
+        int one = 5;
+        int two = 25;
+        int three = 27;
+        if ( one > two && one > three) {
+            System.out.println(" Number one more than all.");
+        } else if (two > one && two > three){
+            System.out.println(" Number two more than all.");
+        } else {
+            System.out.println(" Number three more than all.");
+        }
+
+
 
     }
 }
