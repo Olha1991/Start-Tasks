@@ -4,27 +4,32 @@ public class Main {
         //Task 1
         //Use a for loop to print all integers from 1 to 10 to the console.
         System.out.println("Task 1");
-        for (int i = 0; i <= 10; i++){
-            System.out.println(i);
+        for (int i = 1; i <= 10; i++){
+            System.out.print(i + " ");
         }
+        System.out.println();
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println();
 
         //Task 2
         //Use a for loop to print all integers between 10 and 1 to the console.
         System.out.println("Task 2");
-        for (int i = 10; i > 0; i--){
-            System.out.println(i);
+        for (int i = 10; i >= 1; i--){
+            System.out.print(i + " ");
         }
+        System.out.println();
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println();
 
         //Task 3
         //Print all even numbers from 0 to 17 to the console.
         System.out.println("Task 3");
-        for (int i = 0; i <= 17; i = i + 2){
-            System.out.println(i);
+        for (int i = 0; i <= 17; i++){
+            if(i % 2 == 0){
+            System.out.print(i + " ");
+            }
         }
+        System.out.println();
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println();
 
@@ -32,8 +37,9 @@ public class Main {
         //Print to the console all numbers from 10 to -10 from the largest number to the smallest.
         System.out.println("Task 4");
         for (int i = -10; i <= 10; i++){
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+        System.out.println();
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println();
 
@@ -41,8 +47,10 @@ public class Main {
         //Write a program that outputs to the console all leap years from 1904 to 2096. The result should be output to
         //the console in the format: "... year is a leap year."
         System.out.println("Task 5");
-        for (int i = 1904; i <= 2096; i = i + 4){
-            System.out.println(i + " year is a leap year.");
+        for (int year = 1904; year <= 2096; year++){
+            if (year % 4 ==0){
+            System.out.println(year + " year is a leap year.");
+            }
         }
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println();
@@ -51,9 +59,10 @@ public class Main {
         //Write a program that prints a sequence of numbers to the console:
         //7 14 21 28 35 42 49 56 63 70 77 84 91 98
         System.out.println("Task 6");
-        for (int i = 7; i <= 98; i = i + 7){
-            System.out.println(i);
+        for (int i = 7; i <= 98; i += 7){
+            System.out.print(i + " ");
         }
+        System.out.println();
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println();
 
@@ -61,9 +70,10 @@ public class Main {
         //Write a program that prints a sequence of numbers to the console:
         //1 2 4 8 16 32 64 128 256 512
         System.out.println("Task 7");
-        for (int i = 1; i <= 512; i = i * 2 ){
-            System.out.println(i);
+        for (int i = 1; i <= 512; i *= 2 ){
+            System.out.print(i + " ");
         }
+        System.out.println();
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println();
 
@@ -112,9 +122,8 @@ public class Main {
         //2*9=18
         //2*10=20
         System.out.println("Task 10");
-        int multiply = 2;
-        for(int i = 1; i <=10; i++) {
-            System.out.println("2 * " + i + " = " + multiply * i);
+        for(int multiplier = 1; multiplier <=10; multiplier++) {
+            System.out.printf("%d * %d = %d%n" , 2, multiplier,2 * multiplier);
         }
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println();
