@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        //Task
+        //Task 11
         //Write a small library reference book that stores information about books.
         //1. Create a Book class that will contain data about the title, author, and year of publication of the book. Make
         //sure that the fields of the Book class are of the correct types: String, Author, and int.
@@ -15,17 +15,20 @@ public class Main {
         //Create a separate class to run the application and declare the main method in it.
         //7. In the same main method, change the publication year of one of the books using a setter.
 
-        Book book1 = new Book("Misery", 1987);
+        //Task 12
+        //Implement the toString, equals, and hashCode methods in the Author and Book classes you created in the last lesson.
+        //Note that the book's toString should not duplicate the code from the author's toString, but should delegate
+        // (call) its own version of the method.
+
         Author author1 = new Author ("Stephen ", "King");
-        System.out.println("book1 - " + book1.getBookTitle() + " " + book1.getYearOfPublication() + "; author1 - " +
-                author1.getFirstName()+ " " + author1.getLastName());
-        Book book2 = new Book("Pride and Prejudice", 1813);
+        Book book1 = new Book("Misery", 1987, author1);
+        System.out.println(book1);
+
         Author author2 = new Author ("Jane ", "Austen");
-        System.out.println("book2 - " + book2.getBookTitle() + book2.getYearOfPublication() + "; author2 - " +
-                author2.getFirstName() + " " + author2.getLastName());
+        Book book2 = new Book("Pride and Prejudice",  1813, author2);
+        System.out.println(book2);
 
         book1.setYearOfPublication(1989);
-        System.out.println("book1 - " + book1.getBookTitle() + " " + book1.getYearOfPublication() + "; author1 - " +
-                author1.getFirstName()+ " " + author1.getLastName());
+        System.out.println(book1);
     }
 }
